@@ -24,7 +24,7 @@
                 </button>
             </div>
         </form>
-        <form id="edit-form" class="">
+        <form id="edit-form" class="hide">
             <p>Edite a sua tarefa:</p>
             <div class="form-control">
                 <input type="text" id="edit-input">
@@ -34,24 +34,26 @@
             </div>
             <button id="cancel-edit-btn">Cancelar</button>
         </form>
-        <div id="toolbar">
-            <h4>Pesquisar:</h4>
-            <form>
-                <input type="text" id="search-input" placeholder="Buscar">
-                <button id="erase-button">
-                    <i class="fa-solid fa-delete-left"></i>
-                </button>
-            </form>
-        </div>
-        <div id="filter">
-            <h4>Filtrar:</h4>
-            <select id="filter-select">
-                <option value="all">Todos</option>
-                <option value="done">Feitos</option>
-                <option value="todo">A fazer</option>
-            </select>
-        </div>
-        <div id="todo-list">
+        <section id="toolbar">
+            <div id="search">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Buscar">
+                    <button id="erase-button">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filtrar:</h4>
+                <select id="filter-select">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A fazer</option>
+                </select>
+            </div>
+        </section>
+        <section id="todo-list">
             <div class="todo">
                 <h3>Estou fazendo alguma coisa...</h3>
                 <button class="finish-todo">
@@ -76,7 +78,7 @@
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
